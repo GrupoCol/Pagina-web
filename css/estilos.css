@@ -17,7 +17,7 @@ body {
 }
 
 .titulo {
-    color: #642a73;
+    color: #4E1743;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -57,9 +57,10 @@ nav{
     nav ul{
         float: right;
         margin-right: 30px;
+        
     }
     nav ul li{
-        display: inline-block;
+        display: inline;
         line-height: 25%;
         margin: 10 2px ;
     }
@@ -67,10 +68,9 @@ nav{
         color: #fff;
         font-size: 16px;
         padding: 7px 11px;
-        border-radius:1px;
+        border-radius:11px;
         text-transform: uppercase;
         font-family: 'Poppins Regular ';
-
     }
     nav ul li .logo2{
         display: inline;
@@ -83,11 +83,7 @@ nav{
         transition: .5s;
         color: #4E1743;
     }
-    li .logo2.active, li .logo2:hover{
-        background: #ffffff;
-        transition: .5s;
-        color: #4E1743;
-        }
+
     .checkbtn{
         font-size: 30px;
         color:  #4E1743;
