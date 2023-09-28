@@ -5,11 +5,18 @@
 }
 
 body {
-    font-family: 'Poppins Medium';
+    font-family: 'Lato',sans-serif;
 }
 
 .contenedor {
     padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-Servicios {
+    padding: 10px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -22,7 +29,12 @@ body {
     text-align: center;
     margin-bottom: 60px;
 }
-
+.titulo2 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 /* Header */
 
 header {
@@ -35,19 +47,19 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    font-family: 'Poppins Regular ';
-
+    font-family: 'Lato',sans-serif;
 }
 
 nav{
     text-align: left;
     padding: 16px 50px 0 0;
     background: #4E1743;
-    height: 80px;
+    height: 90px;
     width: 100%;
+    align-items: center;
     }
     .enlace{
-        padding: 15px 150px;
+        margin-left: 6%;
     }
     .logo{
         position: absolute;
@@ -56,7 +68,7 @@ nav{
     }
     nav ul{
         float: right;
-        margin-right: 30px;
+        margin-right: 0px;
         
     }
     nav ul li{
@@ -65,12 +77,20 @@ nav{
         margin: 10 2px ;
     }
     nav ul li a{
+        text-decoration: none;
         color: #fff;
         font-size: 16px;
         padding: 7px 11px;
         border-radius:11px;
         text-transform: uppercase;
-        font-family: 'Poppins Regular ';
+        font-family:'Lato',sans-serif;
+    }
+    nav ul li .logo2{
+        text-decoration: none;
+        color: transparent;
+        font-size: 16px;
+        padding: 1px 11px;
+        border: radius 100px;
     }
     nav ul li .logo2{
         display: inline;
@@ -80,6 +100,11 @@ nav{
         }
     li a.active, li a:hover{
         background: #ffffff;
+        transition: .5s;
+        color: #4E1743;
+    }
+    li .logo2.active, li .logo2:hover{
+        background: transparent;
         transition: .5s;
         color: #4E1743;
     }
@@ -93,6 +118,7 @@ nav{
         cursor: pointer;
         display: none;
     }
+
     #check{
         display: none;
     }
@@ -144,8 +170,8 @@ nav{
 }
 .wave {
     color: #09f;
-    animation: wave 3s ease-in-out infinite;
-  }
+    animation: wave 5s ease-in-out infinite;
+}
   
   @keyframes wave {
     0%, 100% {
@@ -161,7 +187,6 @@ nav{
         0% 100%
       );
     }
-  
     50% {
       clip-path: polygon(0% 60%,
       15% 65%,
@@ -186,20 +211,41 @@ header .textos-header{
     padding-top: 10%;
     flex-direction: column;
     text-align: left;
-    margin-left: 12%;
 }
 
 .textos-header h1{
     font-size: 50px;
     color:#fff;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .textos-header h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     color:#fff;
-}
+    margin-left: 7%;
+    margin-right: 7%;
 
+}
+.posicion-botones{
+    padding: 0px;
+    margin-left: 79%;
+}
+.botones-header {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 10px;
+    text-decoration: none;
+    background-color: #4E1743;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #fff;
+    justify-items: left;
+    justify-content: center;
+
+}
 .wave{
     position: absolute;
     bottom: 0;
@@ -209,7 +255,7 @@ header .textos-header{
 /* About us */
 
 main .sobre-nosotros{
-    padding: 30px 0 60px 0;
+    padding: 50px 23px 60px 0px;
 }
 .contenedor-sobre-nosotros{
     display: flex;
@@ -251,7 +297,8 @@ main .sobre-nosotros{
 
 
 .portafolio{
-    background: #f2f2f2;
+    background-image: url(../img/fds_sin.png);
+    background-repeat: no-repeat;
 }
 
 .galeria-port{
