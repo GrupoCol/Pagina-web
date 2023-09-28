@@ -53,7 +53,7 @@ header {
 nav{
     text-align: left;
     padding: 16px 50px 0 0;
-    background: #4E1743;
+    background: transparent;
     height: 90px;
     width: 100%;
     align-items: center;
@@ -88,13 +88,13 @@ nav{
     nav ul li .logo2{
         text-decoration: none;
         color: transparent;
-        font-size: 16px;
-        padding: 1px 11px;
+        font-size: 10px;
+        padding: 1px 3px;
         border: radius 100px;
     }
     nav ul li .logo2{
         display: inline;
-        height: 45px;
+        height: 38px;
         text-align: left; 
 
         }
@@ -205,19 +205,21 @@ nav{
 header .textos-header{
     display: flex;
     height: 430px;
-    width: 100%;
-    align-items: left;
-    justify-content: left;
+    width: 80%;
+    align-items: baseline;
     padding-top: 10%;
-    flex-direction: column;
     text-align: left;
+    flex-direction: column;
+    align-content: center;
 }
+
+
 
 .textos-header h1{
     font-size: 50px;
     color:#fff;
     margin-left: 7%;
-    margin-right: 7%;
+    margin-right: 10%;
 }
 
 .textos-header h2{
@@ -225,12 +227,16 @@ header .textos-header{
     font-weight: 300;
     color:#fff;
     margin-left: 7%;
-    margin-right: 7%;
-
 }
 .posicion-botones{
-    padding: 0px;
     margin-left: 79%;
+    margin-bottom: 100%;
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+    flex-direction: column;
+    align-content: center;
+    
 }
 .botones-header {
     padding-top: 4px;
