@@ -23,6 +23,23 @@ body {
     overflow: hidden;
 }
 
+.container { 
+    display: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+  
+.counter {
+    font-size: 3em;
+}
+  
+target-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .titulo {
     color: #4E1743;
     font-size: 30px;
@@ -204,7 +221,7 @@ nav{
 
 header .textos-header{
     display: flex;
-    height: 430px;
+    height: 256px;
     width: 80%;
     align-items: baseline;
     padding-top: 10%;
@@ -212,9 +229,10 @@ header .textos-header{
     flex-direction: column;
     align-content: center;
 }
-
-
-
+.Numeros{
+    text-align: center;
+    font-size: 100px;
+}
 .textos-header h1{
     font-size: 50px;
     color:#fff;
