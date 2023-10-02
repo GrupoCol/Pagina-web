@@ -677,3 +677,20 @@ footer{
         font-size: 20px;
     }
 }
+
+footer{
+    display: flex;
+    justify-content:center;
+    background-color: #4E1743;
+    background-image:url(../img/Construcción\ de\ logo\ y\ sus\ variantes\ 2-30\ \(1\).png);
+    background-position:top; 
+    background-repeat:repeat;
+    background-size:cover;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: center;
+  }
