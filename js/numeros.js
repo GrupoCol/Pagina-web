@@ -1,11 +1,41 @@
-let count = document.querySelector(".count");
-let counter= 600;
-setInterval(()=>{
-  if(counter< 3500){
-    counter++;
-    count.innerHTML= counter;
-  }else {
-    clearInterval(interval)
-  }
-  console.log('test');
-},0.1)
+const containers = document.querySelectorAll(".containers span");
+const container = document.querySelector(".containers");
+
+let activated = false;
+
+window.addEventListener("scroll", ()=>{
+if(
+  pageYOffset > container.offsetTOP - container.offsetHeight -200
+  && activated== false
+){
+  container.forEach(container =>{
+    container.innerText=0;
+
+    let count =0;
+
+    function updateCount(){
+      const target =parseInt(container.dataset.count);
+      if(count < target){
+        count++;
+        console.innerText= count;
+        setTimeout(updateCount,10);
+      }else{
+        container.innerText = target;
+      }
+    }
+    updateCount();
+    activated= true;
+  });
+} else if(
+  pageYOffset <= container.offsetTOP - container.offsetHeight -500
+  || pageXOffset === 0
+  && actividad ===true
+ ){
+  containers.forEach(container => {
+    container.innerText = 0;
+  });
+  activated =false ; 
+ }
+
+}
+)

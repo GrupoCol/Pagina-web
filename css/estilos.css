@@ -385,15 +385,25 @@ main .sobre-nosotros{
 .container{
     width: 28vmin;
     height: 28vmin;
-    border: 1px solid black;
     display: flex;
-    flex-direction: row ;
-    justify-content: space-around;
-    padding: 1em 0;
+    flex-direction: column ;
+    justify-content: flex-start;
+    padding: 1em 21px;
     position: relative;
     font-size: 16px;
     border-radius: 0.5em;
-    background-color: #4E1743;
+    align-items: center;
+    margin:10px;
+}
+.countainer:not(:last-child)::before{
+    content: '';
+    background-color: #09f;
+    position: absolute;
+    width: 2px;
+    height: 3em;
+    top:50%;
+    transform: translateX(-50%);
+    bottom: -1em;
 }
 .containers{
     height: 1%;
@@ -403,11 +413,11 @@ main .sobre-nosotros{
     position: absolute;
     font-size: 16px;
     border-radius: 0.5em;
-    margin-left: 20%;
+    margin-left: 15%;
 
 }
 span.num{
-    color: rgb(255, 255, 255);
+    color: rgb(43, 43, 43);
     display: grid;
     place-items: center;
     font-weight: 80;
@@ -415,7 +425,7 @@ span.num{
 
 }
 span.text{
-    color: rgb(255, 255, 255);
+    color: rgb(43, 43, 43);
     font-size: 1em;
     text-align: center;
     pad:0.7em 0;
