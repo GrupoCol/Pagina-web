@@ -568,7 +568,7 @@ footer{
     margin: auto;
 }
 .hidden {
-    transform: translateX(-150%);
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 2s ease-out, opacity 2s ease-out;
   }
