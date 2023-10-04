@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       animateTitle();
       // Set a flag to indicate animation has been shown
       sessionStorage.setItem('animationShown', 'true');
-    }, 5000);
+    }, 1000);
   } else {
     // If animation has already been shown, display the title immediately
     animateTitle();
