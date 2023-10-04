@@ -325,10 +325,10 @@ header .textos-header{
     margin-left: 7%;
 }
 .posicion-botones{
-    margin-left: 79%;
+    margin-left: 81%;
     margin-bottom: 100%;
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     text-align: left;
     flex-direction: column;
     align-content: center;
