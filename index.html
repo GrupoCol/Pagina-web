@@ -27,18 +27,19 @@
               <li><a  href="#">Servicios</a></li>
               <li><a  href="#">Portafolio</a></li>
               <li><a  href="#">Contacto</a></li>
-              <li><a href="#"><img src="img\iconos-01.png"class="logo2" ></a></li>
-              <li><a href="#"><img src="img\iconos-02.png" class="logo2 "></a></li>
-              <li><a href="#"><img src="img\iconos-03.png" class="logo2 "></a></li>
+              <li><a href="#" class="actived"><img src="img\iconos-01.png"class="logo2" ></a></li>
+              <li><a href="#"class="actived"><img src="img\iconos-02.png" class="logo2 "></a></li>
+              <li><a href="#"class="actived"><img src="img\iconos-03.png" class="logo2 "></a></li>
             </ul>
         </nav>
         <section >
             <div class="textos-header">
-             <h1 >Grupo Colchagua<br> Santa Cruz</h1>
-             <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, <br>
+             <h1 id="title" class="hidden">Grupo Colchagua<br> Santa Cruz</h1>
+             <h2 id="title2" class="hidden" > Lorem ipsum dolor sit amet consectetur adipisicing elit. At, <br>
                 fugit ut quis sed earum voluptatibus id ab, quasi <br>
                 veritatis dolor possimus ducimus nulla quae veniam,<br> quos dicta hic! Quo, distinctio.
             </h2>
+
             </div>
             <div class="posicion-botones">
                 <li><a class="botones-header" href="#">Trabaja con nosotros</a></li>
@@ -115,23 +116,34 @@
             </div>
         </section>
         <section >
-            <h2 class="titulo">Nuestros numeros Hablan </h2>
+            <h2 class="titulo">Nuestros números hablan </h2>
             <div class="containers">
                 <div class="container">
-                    <span class="num" data-count="350">0</span>+
-                    <span class="text">Clientes en chile</span>
-                </div>
-                <div class="container">
-                    <span class="num" data-count="350">0</span>+
-                    <span class="text">Clientes en chile</span>
-                </div>
-                <div class="container">
-                    <span class="num" data-count="350">0</span>+
-                    <span class="text">Clientes en chile</span>
-                </div>
-                <div class="container">
-                    <span class="num" data-count="350">0</span>+
-                    <span class="text">Clientes en chile</span>
+                    <div id="counter1" class="counter num">0</div>
+                    <div id="targetSection1" class="target-section texto">
+                        Socursales a nivel nacional   
+                    </div>
+                  </div>
+                
+                  <div class="container">
+                    <div id="counter2" class="counter num">0</div>
+                    <div id="targetSection2" class="target-section texto">
+                        Años de experiencia
+                    </div>
+                  </div>
+                
+                  <div class="container">
+                    <div id="counter3" class="counter num">0</div>
+                    <div id="targetSection3" class="target-section texto">
+                        Clientes en chile
+                    </div>
+                  </div>
+                
+                  <div class="container">
+                    <div id="counter4" class="counter num">0</div>
+                    <div id="targetSection4" class="target-section texto">
+                        trabajadores asociados
+                    </div>
                 </div>
             </div>
             <div class="container-foto">
@@ -206,6 +218,8 @@
         </div>
     </footer>
     <script src="js/numeros.js"></script>
+    <script src="js\titulos.js"></script>
+    <script src="js/scriptcopy.js"></script>
 
 </body>
 </html>

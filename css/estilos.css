@@ -109,6 +109,7 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 .titulo2 {
     color: #ffffff;
@@ -144,12 +145,12 @@ nav{
     }
     .logo{
         position: absolute;
-        height: 56px;
+        height: 69px;
         text-align: left;
     }
     nav ul{
         float: right;
-        margin-right: 0px;
+        margin-right: 9.5%;
         
     }
     nav ul li{
@@ -177,18 +178,20 @@ nav{
         display: inline;
         height: 38px;
         text-align: left; 
-
-        }
+        margin-right: -19px;
+        margin-top: 2px;
+    }
     li a.active, li a:hover{
         background: #ffffff;
         transition: .5s;
         color: #4E1743;
     }
-    li .logo2.active, li .logo2:hover{
+    li .actived, li .actived:hover{
         background: transparent;
         transition: .5s;
         color: #4E1743;
     }
+    
 
     .checkbtn{
         font-size: 30px;
@@ -300,7 +303,7 @@ header .textos-header{
 .textos-header h1{
     font-size: 50px;
     color:#fff;
-    margin-left: 7%;
+    margin-left: 9.6%;
     margin-right: 10%;
 }
 
@@ -383,8 +386,8 @@ main .sobre-nosotros{
 
 /* Galeria */
 .container{
-    width: 28vmin;
-    height: 28vmin;
+    width: 48vmin;
+    height: 18vmin;
     display: flex;
     flex-direction: column ;
     justify-content: flex-start;
@@ -413,24 +416,26 @@ main .sobre-nosotros{
     position: absolute;
     font-size: 16px;
     border-radius: 0.5em;
-    margin-left: 15%;
+    margin-left: 5%;
 
 }
-span.num{
+.num{
     color: rgb(43, 43, 43);
     display: grid;
     place-items: center;
     font-weight: 80;
     font-size: 3em;
+    font-family:'Poppins'bold;
 
 }
-span.text{
+.texto{
     color: rgb(43, 43, 43);
     font-size: 1em;
     text-align: center;
     pad:0.7em 0;
     font-weight: 600;
     line-height: 0;
+    font-family:'Lato',sans-serif;
 }
 
 .portafolio{
@@ -562,7 +567,16 @@ footer{
     padding: 60px 0 30px 0;
     margin: auto;
 }
-
+.hidden {
+    transform: translateX(-150%);
+    transition: transform 2s ease-out;
+}
+  
+.shown {
+    transform: translateX(0%);
+    transition: transform 2s ease-in;
+}
+  
 .contenedor-footer{
     display: flex;
     width: 90%;
