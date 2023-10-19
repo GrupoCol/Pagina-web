@@ -49,6 +49,16 @@ body {
     opacity: 1;
     transition: transform 2s ease-in, opacity 2s ease-in;
   }
+  .botones-header.hidden{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}  
+.botones-header.shown {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: transform 2s ease-in, opacity 2s ease-in;
+  }
   
 .target-section {
     height: 100vh;
